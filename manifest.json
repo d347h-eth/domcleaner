@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "DOM Cleaner",
+    "version": "1.0",
+    "description": "Removes unwanted DOM elements on any page",
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": ["activeTab"]
+}
